@@ -3,4 +3,9 @@ name = "customer_segmentation"
 version = "0.1.0"
 edition = "2024"
 
+
 [dependencies]
+csv = "1.1.6"
+serde = { version = "1.0.136", features = ["derive"] }
+rand = "0.8.5"
+chrono = { version = "0.4", features = ["serde"] }
