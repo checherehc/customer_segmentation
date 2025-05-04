@@ -4,7 +4,7 @@ use csv::ReaderBuilder;
 use serde::Deserialize;
 use std::{error::Error, fs::File};
 
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Deserialize,Clone)]
 pub struct Customer {//struct representing one customer record from the dataset
 	#[serde(rename = "ID")]
 	pub id: u32,
